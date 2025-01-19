@@ -1,0 +1,58 @@
+:root{
+    --primary-color: #454372;
+    --secondary-color: #FFC15E;
+    --accent1-color: #D7F9F1;
+    --accent2-color: #1B98E0;
+    --heading-font: "Roboto", sans-serif;
+    --text-font: "Montserrat", serif;
+}
+.montserrat-font {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-font {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+body{
+    background-color: var(--primary-color);
+    font-family: var(--heading-font)
+}
+
+
+header{
+    background-color: var(--secondary-color);
+    font-family: var(--text-font)
+}
+
+footer{
+    background-color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+#banner-box{
+    background-color: var(--accent1-color);
+    font-family: var(--text-font)
+    
+}
+
+#product-gallery{
+    background-color: var(--accent2-color);
+    font-family: var(--heading-font);
+}
+
+#heading-font{
+    font-family: var(--heading-font)
+}
+
+p{
+    font-family: var(--heading-font)
+}
