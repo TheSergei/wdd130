@@ -50,6 +50,7 @@ header, main, footer{
     left: 2rem;
     right: 2rem;
     color: var(--secondary-color);
+    padding-left: 10px;
 }
 
 .hero article img{
