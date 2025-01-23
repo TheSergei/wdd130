@@ -1,0 +1,71 @@
+:root{
+    --primary-color: #454372;
+    --secondary-color: #FFC15E;
+    --accent1-color: #D7F9F1;
+    --accent2-color: #1B98E0;
+    --heading-font: "Roboto", sans-serif;
+    --text-font: "Montserrat", serif;
+}
+
+body{
+    font-family: var(--text-font);
+    background-color: var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    font-family: var(--heading-font);
+}
+
+header, main, footer{
+    font-family: var(--heading-font);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero img{
+    width: 100%;
+}
+.hero{
+    position: relative;
+    width: 100%;
+}
+
+.hero h1{
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.479);
+    color: var(--secondary-color);
+}
+
+.hero article{
+    position: absolute;
+    background-color: #0000004d;
+    top: 15rem;
+    left: 2rem;
+    right: 2rem;
+    color: var(--secondary-color);
+}
+
+.hero article img{
+    float: right;
+    margin: 2rem;
+    width: 12rem;
+}
+
+h2{
+    color: var(--accent2-color);
+}
+
+footer{
+    color: var(--accent1-color)
+}
+
+.history p{
+    color: var(--secondary-color);
+}
