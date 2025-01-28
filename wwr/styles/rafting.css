@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #454372;
-    --secondary-color: #FFC15E;
-    --accent1-color: #D7F9F1;
-    --accent2-color: #1B98E0;
+    --primary-color: #EEE1B3;
+    --secondary-color: #1B98E0;
+    --accent1-color: #A599B5;
+    --accent2-color: #2F4858;
     --heading-font: "Roboto", sans-serif;
     --text-font: "Montserrat", serif;
 }
@@ -24,6 +24,30 @@ header, main, footer{
     font-family: var(--heading-font);
     max-width: 1200px;
     margin: 0 auto;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    border-bottom: 3px solid var(--accent2-color);
+}
+
+header nav {
+    display: flex;
+    grid-column: 3/5;
+    grid-row: 3/4;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    
+}
+
+header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero img{
@@ -60,13 +84,106 @@ header, main, footer{
 }
 
 h2{
-    color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 footer{
-    color: var(--accent1-color)
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(1, 1fr);
+    color: var(--accent1-color);
+    
 }
 
-.history p{
+.sociallinks{
+    display: flex;
+    align-items: flex-end;
+    grid-area: 1/5;
+    justify-content: space-evenly;
+
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/3;
+}
+
+
+
+.history{
+    display: grid;
+    grid-template-columns: repeat(5, 20%); 
+    grid-template-rows: repeat(4, 25%);
+    border: 3px solid var(--accent2-color)
+}
+
+.history div{
+    display: flex;
+    grid-area: 1/3;
+    justify-content: center;
+    align-items: center;
+}
+
+.history img{
+    width: 250px;
+    height: auto;
+    display: flex;
+    grid-area: 2/3;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+#first{
     color: var(--secondary-color);
+    display: flex;
+    grid-area: 2/1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+#second{
+    color: var(--secondary-color);
+    display: flex;
+    grid-area: 2/5;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.adventure{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.adventure div {
+    grid-column: 1 / 6; 
+    grid-row: 1 / 2; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.adventure img{
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 2/5;
+}
+
+.adventure p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1B98E0;
 }
