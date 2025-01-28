@@ -155,35 +155,34 @@ footer p{
 
 }
 
-.adventure{
+.adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
-    grid-template-rows: repeat(1, 1fr);
+    gap: 20px; 
 }
 
 .adventure div {
-    grid-column: 1 / 6; 
-    grid-row: 1 / 2; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    grid-column: 1 / -1; 
+    text-align: center; 
     color: var(--accent2-color);
 }
 
-
-.adventure img{
-    width: 200px;
-    height: auto;
+.adventure figure {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    grid-row: 2/5;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.adventure p{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.adventure figure img {
+    width: 100%; 
+    height: auto; 
+}
+
+.adventure figcaption {
+    margin-top: 10px; 
+    text-align: center;
     color: var(--accent2-color);
 }
