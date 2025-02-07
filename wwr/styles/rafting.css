@@ -233,9 +233,6 @@ footer p{
 }
 
 form{
-    display: grid;
-    grid-row: 1fr 1fr;
-    grid-column: 1fr 1fr;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -244,10 +241,9 @@ form{
 form legend{
     margin: 0 auto;
     text-align: center;
+  
 }
 
 form label{
-    grid-row: 1;
     display: flex;
-    text-align: left;
 }
