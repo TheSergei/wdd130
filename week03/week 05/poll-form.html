@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>user poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+            <legend>contact info</legend>
+                <label for="fullname">fullname</label>
+                <input type="text" id="fullname" name="fullname">
+                <label>Email: <input type="email" name="useremail"></label>
+            </fieldset>
+            <fieldset>
+                <legend>questions</legend>
+                <label for="browser">what is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">chrome</option>
+                    <option value="safari">safari</option>
+                    <option value="firefox">firefox</option>
+                </select>
+                    <label for="pet">do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                    <label for="feedback">list the places youve lived before</label>
+                    <textarea name="feedback" id="feedback" rows="4" placeholder="lorem... etc"></textarea>
+            </fieldset>
+            <button type="submit">Submit poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>sergio poll</p>
+    </footer>
+</body>
+</html>
