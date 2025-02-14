@@ -247,24 +247,34 @@ form label{
     display: flex;
 }
 
-.hero3{
-    display: grid;
+.hero3 {
     position: relative;
-    justify-items: center;
-    align-content: center;
+    width: 100vw; 
+    height: 400px; 
+    overflow: hidden;
 }
 
-.hero3 img{
+.hero3 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.text{
+.hero3 .text {
     position: absolute;
-    text-align: center;
-    display: flex;
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size:x-large;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: max-content;
 }
+
 
 .three{
     text-align: center;
