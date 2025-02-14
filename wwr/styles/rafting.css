@@ -92,7 +92,6 @@ footer{
     grid-template-columns: repeat(5, 1fr); 
     grid-template-rows: repeat(1, 1fr);
     color: var(--accent2-color);
-    
 }
 
 .sociallinks{
@@ -315,4 +314,51 @@ article h1{
 article button{
     grid-column: 3;
     grid-row: 5;
+}
+
+.sectionhome {
+    display: grid;
+    position: relative;  
+    height: 100vh;  
+}
+
+.sectionhome img {
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+}
+
+section h1 {
+    color: white;
+    position: absolute;  
+    top: 35%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    font-size: 50px;
+    z-index: 1; 
+}
+
+.call{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.call h2{
+    display: block;
+}
+
+.one{
+    grid-row: 1;
+    grid-column: 2;
+    margin: 30px;
+}
+
+
+
+.link{
+    position: relative;
 }
